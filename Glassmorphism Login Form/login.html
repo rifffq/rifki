@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tugas rifki</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form action="#" onsubmit="event.preventDefault(); login();">
+      <h2>Login</h2>
+        <div class="input-field">
+        <input type="text"  id="email" required>
+        <label>Enter your email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="pass" required>
+        <label>Enter your password</label>
+      </div>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Remember me</p>
+        </label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button type="submit">Log In</button>
+      <div class="register">
+        <p>belum puya akun? <a href="#">Register</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+<script>
+  function login() {
+     const name = "rifki";
+     const pword = "1";
+     const inname = document.getElementById("email").value;
+     const inpass = document.getElementById("pass").value;
+     if (name === inname && pword === inpass) {
+        window.location.href = "../index.html";
+     }
+     else{
+      alert("tidak terdaftar");
+     }
+  }
+</script>
+</html>
